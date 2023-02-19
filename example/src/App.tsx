@@ -1,18 +1,17 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-svg-jazzicon';
+import Jazzicon from 'react-native-svg-jazzicon';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Jazzicon
+        size={300}
+        address={
+          'nano_1zpdhgrqh9wfhgyqab5iiwtd6rizq376yueysz7us8gn51aq94qd6qwajww'
+        }
+      />
     </View>
   );
 }
