@@ -1,6 +1,6 @@
 {
   "name": "react-native-svg-jazzicon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "jazzicon on react native using react-native-svg",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
