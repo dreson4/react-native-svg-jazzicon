@@ -1,30 +1,51 @@
 # react-native-svg-jazzicon
 
-jazzicon on react native using react-native-svg
+Jazzicon on react native using react-native-svg.
 
 ## Installation
 
 ```sh
 npm install react-native-svg-jazzicon
+npm install react-native-svg
 ```
+or
+```
+yarn add react-native-svg-jazzicon
+yarn add react-native-svg
+```
+
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-svg-jazzicon';
+import Jazzicon from 'react-native-svg-jazzicon';
 
-// ...
-
-const result = await multiply(3, 7);
 ```
 
-## Contributing
+```
+<Jazzicon 
+  size={100} 
+  address="your-address-here"/>
+```
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+## Props
+```
+{
+  size?: number;
+  borderRadius?: number;
+  address?: string;
+  seed?: number;
+  containerStyle?: StyleProp<ViewStyle>;
+  colors?: string[];
+}
+````
 
 ## License
 
 MIT
+
+## Credits
+Hard work was done by [react-native-jazzicon](https://github.com/stanislaw-glogowski/react-native-jazzicon)
 
 ---
 
